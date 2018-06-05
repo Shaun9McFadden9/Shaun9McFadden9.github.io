@@ -3,6 +3,72 @@
     
     <head>
         <title>Shaun's Second Website</title>
+        
+         <style>
+            body {
+                background: gainsboro;
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: times, serif;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: goldenrod;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border-radius: 20px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+                border-radius: 20px;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+                border-radius: 40px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+    </style>
     </head>
     
     <body>
@@ -20,23 +86,23 @@
             <main>
                 
                 <div class="sidebar">
-                    
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7KCgzxTY6btI7VokMysD47CuL0V_cssU9G_LiFMNL9KS3g6X8">
                 </div>
-                
+                    
                 <div class="content">
-                    
-                    <img src="http://i0.kym-cdn.com/photos/images/newsfeed/001/042/049/5ef.jpg">
-                    
+                    <header>Shaun McFadden</header>
+                    <p>Student at LSU Ogden Honors College</p>
                     <section class="interests">
                         <header>Interests</header>
                         <ul>
-                            <li>Video Games</li>
-                            <li>D&D</li>
-                            <li>That's about it</li>
+                            <li id="games">Video Games</li>
+                            <li id="dd">D&D</li>
+                            <li>Robotics</li>
                         </ul>
                     </section>
                     
                 </div>
+                
             </main>
         </div>
     </body>
