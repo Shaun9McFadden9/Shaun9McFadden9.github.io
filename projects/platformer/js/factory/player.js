@@ -130,7 +130,6 @@
                 asset.body.bounce.y = 0;
                 game.add.tween(asset.body).to( { y: asset.body.y -100 }, 1000, Phaser.Easing.Linear.None, true);
 
-                asset.body.velocity.x = 200 * _direction;
                 asset.x += xOffset * _direction;
                 asset.y += yOffset;
             };
@@ -300,7 +299,7 @@
     function doNothing() { console.log('doing nothing!'); }
     
     function init(game) {
-        let asset = game.add.sprite(30, 0, 'halle');
+        let asset = game.add.sprite(30, 650, 'halle');
         asset.anchor.setTo(.5, 1);
         
         animations.walk = asset.animations.add('walk', Phaser.Animation.generateFrameNames('walk-', 1, 30, '.png', 4), 30, true);
@@ -317,7 +316,7 @@
         game.physics.arcade.enable(asset);
     
         //  Player physics properties. Give the little guy a slight bounce.
-        asset.body.bounce.y = 0.4;
+        asset.body.bounce.y = 0.00001;
         asset.body.gravity.y = 900;
         // {"w":69,"h":107}
         asset.body.setSize(22, 95, 0, -3);

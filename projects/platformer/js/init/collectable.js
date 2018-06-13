@@ -34,8 +34,12 @@
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
-        // example: 
-        collectable.create(type.steve, 200, 170, 6, 0.7);
+        // example:
+        collectable.create(type.db, 700, 400);
+        collectable.create(type.db, 720, 400);
+        collectable.create(type.db, 740, 400);
+
+
         
         
         
